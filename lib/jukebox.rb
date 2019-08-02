@@ -26,7 +26,12 @@ end
 end
 
 def play(songs)
-  puts ""
+  puts "Please enter a song name or number:"
+  selection = gets.strip
+  if selection == 1..9
+    puts "Playing"
+  else 
+    puts "Invalid input, please try again"
 end
 
 def exit_jukebox
