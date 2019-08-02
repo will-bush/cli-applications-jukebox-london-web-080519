@@ -27,8 +27,8 @@ end
 
 def play(songs)
   puts "Please enter a song name or number:"
-  selection = gets.strip
-  if selection.to_i <= songs.length
+  selection = gets.strip.to_i
+  if selection <= songs.length
     puts "Playing #{songs[selection]}"
     elsif selection ==
   else 
