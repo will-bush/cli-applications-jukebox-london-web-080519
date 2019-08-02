@@ -29,7 +29,7 @@ def play(songs)
   puts "Please enter a song name or number:"
   selection = gets.strip
   if selection-1 < songs.length
-    puts "Playing #{songs[selection]}"
+    puts "Playing #{selection}"
   else 
     puts "Invalid input, please try again"
   end
